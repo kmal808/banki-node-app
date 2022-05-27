@@ -3,6 +3,7 @@ const fs = require('fs')
 const url = require('url');
 const querystring = require('querystring');
 const figlet = require('figlet')
+const port = process.env.PORT || 8000
 
 //API Banki Questions Data
 // data variable reads the data json from the server, that way we dont have to read the file each time the user wants a question
