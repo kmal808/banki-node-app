@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "figlet": "^1.5.2"
-  }
+  },
+  "scripts": {
+    "start": "node app.js"
+}
 }
