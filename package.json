@@ -2,9 +2,6 @@
   "dependencies": {
     "figlet": "^1.5.2"
   },
-  "scripts": {
-    "start": "node server.js"
-  },
   "name": "banki-node-app",
   "description": "",
   "version": "1.0.0",
