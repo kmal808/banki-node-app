@@ -42,6 +42,8 @@ async function devData(){
   const data = await res.json()
   console.log(data);
   document.querySelector("#number").textContent = data.number
+
   document.querySelector("#question").textContent = data.question
-  document.querySelector("#answer").textContent = data.answer
+  setTimeout(() => {document.querySelector("#answer").textContent = data.answer}, 10000)
+  // document.querySelector("#answer").textContent = data.answer
 }
