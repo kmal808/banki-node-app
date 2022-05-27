@@ -44,7 +44,7 @@ async function devData(){
   const res = await fetch(`/quiz?question=${userCategory}`)
   const data = await res.json()
   console.log(data);
-  document.querySelector("#number").textContent = data.number
+  document.querySelector("#number").textContent = data.questionID
 
   document.querySelector("#question").textContent = data.question
   document.querySelector("#answer").textContent = ''

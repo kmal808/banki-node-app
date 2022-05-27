@@ -41,12 +41,12 @@ const server = http.createServer((req, res) => {
     // console.log(params)
     // console.log(('question' in params))
     // console.log(params['question'])
-    const objToJson = { // This varibale takes the user's number from the input and looks in the dataObj from earlier to return that value back to the user
-      number: dataObj[`${params['question']}`].questionID, 
-      question: dataObj[`${params['question']}`].question,
-      answer: dataObj[`${params['question']}`].answer
-    }
-    res.end(JSON.stringify(objToJson))
+    // const objToJson = { // This varibale takes the user's number from the input and looks in the dataObj from earlier to return that value back to the user
+    //   number: dataObj[`${params['question']}`].questionID, 
+    //   question: dataObj[`${params['question']}`].question,
+    //   answer: dataObj[`${params['question']}`].answer
+    // }
+    res.end(JSON.stringify(dataObj[`${params['question']}`]))
     }
     
     //////////////////////////////////////////////////////////////////////////////////////////////////////
