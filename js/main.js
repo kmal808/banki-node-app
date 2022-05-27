@@ -44,6 +44,7 @@ async function devData(){
   document.querySelector("#number").textContent = data.number
 
   document.querySelector("#question").textContent = data.question
-  setTimeout(() => {document.querySelector("#answer").textContent = data.answer}, 10000)
+  document.querySelector("#answer").textContent = ''
+  setTimeout(() => {document.querySelector("#answer").textContent = data.answer}, 3000)
   // document.querySelector("#answer").textContent = data.answer
 }
