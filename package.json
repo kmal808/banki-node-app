@@ -20,7 +20,7 @@
     "url": "https://github.com/kmal808/banki-node-app/issues"
   },
   "engines": {
-    "node": "14.x"
+    "node": "18.2.0"
   },
   "homepage": "https://github.com/kmal808/banki-node-app#readme"
 }
