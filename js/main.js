@@ -1,3 +1,6 @@
+//Note about data.json file question Object/////////
+//Node questions are numbered 1-27 and take up indexes 0-26 in the array
+
 // document.querySelector('#clickMe').addEventListener('click', makeReq)
 document.querySelector('#clickMe').addEventListener('click', devData)
 
@@ -41,7 +44,7 @@ async function devData(){
   const res = await fetch(`/quiz?question=${userCategory}`)
   const data = await res.json()
   console.log(data);
-  document.querySelector("#number").textContent = data.number
+  document.querySelector("#number").textContent = data.questionID
 
   document.querySelector("#question").textContent = data.question
   document.querySelector("#answer").textContent = ''
