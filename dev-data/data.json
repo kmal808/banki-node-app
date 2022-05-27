@@ -1,0 +1,68 @@
+[
+    {
+        "category": "Node",
+        "questionID": 1,
+        "question": "What is Node.js? Where can you use it?",
+        "answer": "Node.js is an open-source, cross-platform JavaScript runtime environment and library to run web applications outside the client's browser. It is used to create server-side web applications. Node.js is perfect for data-intensive applications as it uses an asynchronous, event-driven model."
+    },
+    {
+        "category": "Node",
+        "questionID": 2,
+        "question": "Why use Node.js?",
+        "answer": "Node.js makes building scalable network programs easy."
+    },
+    {
+        "category": "Node",
+        "questionID": 3,
+        "question": "What are the features of Node.js?",
+        "answer": "Some features of Node.js include: Asynchronous and Event Driven, Very Fast, Single Threaded but Highly Scalable, and no buffering"
+    },
+    {
+        "category": "Node",
+        "questionID": 4,
+        "question": "How do you update NPM to a new version in Node.js",
+        "answer": ""
+    },
+    {
+        "category": "Node",
+        "questionID": 5,
+        "question": "Why is Node.js Single-threaded?",
+        "answer": "Node.js is single-threaded for async processing. By doing async processing on a single-thread under typical web loads, more performance and scalability can be achieved instead of the typical thread-based implementation."
+    },
+    {
+        "category": "Node",
+        "questionID": 6,
+        "question": "Explain callback in Node.js.",
+        "answer": "A callback function is called after a given task. It allows other code to be run in the meantime and prevents any blocking.  Being an asynchronous platform, Node.js heavily relies on callback. All APIs of Node are written to support callbacks."
+    },
+    {
+        "category": "Node",
+        "questionID": 7,
+        "question": "What is callback hell in Node.js?",
+        "answer": "Callback hell, also known as the pyramid of doom, is the result of intensively nested, unreadable, and unmanageable callbacks, which in turn makes the code harder to read and debug."
+    },
+    {
+        "category": "Node",
+        "questionID": 8,
+        "question": "How do you prevent/fix callback Hell?",
+        "answer": "To prevent or fix callback hell, you should properly implement asynchronous logic(async/await)."
+    },
+    {
+        "category": "Node",
+        "questionID": 9,
+        "question": "Explain the role of REPL in Node.js.",
+        "answer": "REPL stands for Read Eval Print Loop, and it represents a computer environment. It’s similar to a Windows console or Unix/Linux shell in which a command is entered. Then, the system responds with an output."
+    },
+    {
+        "category": "Node",
+        "questionID": 10,
+        "question": "Name the types of API functions in Node.js.",
+        "answer": "There are two types of API functions in Node.js. Asynchronous(non-blocking functions) and Synchronous(blocking functions)."
+    },
+    {
+        "category": "Node",
+        "questionID": 6,
+        "question": "Explain callback in Node.js.",
+        "answer": "A callback function is called after a given task. It allows other code to be run in the meantime and prevents any blocking.  Being an asynchronous platform, Node.js heavily relies on callback. All APIs of Node are written to support callbacks."
+    }
+]

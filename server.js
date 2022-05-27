@@ -4,6 +4,12 @@ const url = require('url');
 const querystring = require('querystring');
 const figlet = require('figlet')
 
+//API Banki Questions Data
+// data variable reads the data json from the server, that way we dont have to read the file each time the user wants a question
+const data = fs.readFileSync(`${__dirname}/dev-data/data.json`);
+// dataObj is the json value from the data variable above. Storing it in a variable allows us to use the info to send it back to the user
+const dataObj = JSON.parse(data);
+
 const server = http.createServer((req, res) => {
   const page = url.parse(req.url).pathname;
   const params = querystring.parse(url.parse(req.url).query);
@@ -22,14 +28,30 @@ const server = http.createServer((req, res) => {
       res.end();
     });
   }
-  else if (page == '/otherotherpage') {
-    fs.readFile('otherotherpage.html', function(err, data) {
-      res.writeHead(200, {'Content-Type': 'text/html'});
-      res.write(data);
-      res.end();
-    });
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+    //this is the test api for banki questions. This is just to look at all the api data we use
+    else if (page == '/questions') {
+      res.writeHead(200, {'Content-type': 'application/json'});
+      // res.write(data);
+      res.end(data);
+  } else if (page == '/quiz'){
+    if('question' in params){
+    res.writeHead(200, {'Content-Type': 'application/json'});
+    // console.log(params)
+    // console.log(('question' in params))
+    // console.log(params['question'])
+    const objToJson = { // This varibale takes the user's number from the input and looks in the dataObj from earlier to return that value back to the user
+      number: dataObj[`${params['question']}`].questionID, 
+      question: dataObj[`${params['question']}`].question,
+      answer: dataObj[`${params['question']}`].answer
+    }
+    res.end(JSON.stringify(objToJson))
+    }
+    
+    //////////////////////////////////////////////////////////////////////////////////////////////////////
   }
   else if (page == '/api') {
+    console.log(params)
     if('question' in params){
       if(params['question']== 'banki1'){
         res.writeHead(200, {'Content-Type': 'application/json'});
