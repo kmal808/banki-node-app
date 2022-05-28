@@ -1,6 +1,6 @@
 //Note about data.json file question Object/////////
 //Node questions are numbered 1-27 and take up indexes 0-26 in the array
-//HTML questions are numbered 1-10 and take up indexes 27-36 in the array
+//HTML questions are numbered 28- 37 and take up indexes 27-36 in the array
 
 document.querySelector('#clickMe').addEventListener('click', devData)
 // cats variable grabs all the buttons with the class of categories from the index.html and puts them into an array
@@ -47,7 +47,7 @@ cats.forEach(x => {
 // }
 
 async function devData(){
-  const userCategory = document.querySelector("#userName").value;
+  const userCategory = document.querySelector("#userName").value - 1;
   const res = await fetch(`/quiz?question=${userCategory}`)
   const data = await res.json()
   console.log(data);
