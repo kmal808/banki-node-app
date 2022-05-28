@@ -1,3 +1,152 @@
-h1{
+/* h1{
   color: red;
+} */
+
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
 }
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+ clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+  size: 50vh;
+}
+/* body {
+   /* background-color: #69c6db; */
+   /* background-image: url(https://media.giphy.com/media/3o7bu5BfTyUavLZGrC/giphy.gif); */
+   /* background-image: url(https://media.giphy.com/media/l0HlVq3nJvhSZiZEs/giphy.gif) ; */
+   /* background-size: 100vh, 100vw; */
+   
+   
+ 
+/* } */ 
+/*
+/* Trying out some styles and such. Ignore for now, maybe wont go this way */
+
+
+/**/
+/* .box {
+  background: #2db34a;
+  border-radius: 6px;
+  transition-property: background, border-radius;
+  transition-duration: .2s, 1s;
+  transition-timing-function: linear, ease-in;
+}
+.box:hover {
+  background: #ff7b29;
+  border-radius: 50%;
+} */
+
+/* .cardInfo{
+
+} */
+
+.card-container {
+  height: 150px;
+  /* perspective: 600; */
+  position: absolute;
+  width: 150px;
+}
+.card {
+  height: 100%;
+  position: absolute;
+  top: 10%;
+  /* transform-style: preserve-3d;
+  transition:   5s ease-in-out; */
+  width: 100%;
+}
+
+/* .crossRotate:active {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+} */
+/* .card:on-click {
+  transform: rotateY(180deg);
+} */
+
+/* .card .side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.card .back {
+  transform: rotateY(180deg);
+} */
+
+/* .card{
+  height: 480px;
+  width: 300px;
+
+} */
+
+.container {
+  width: 80%;
+  height: 80%;
+  background-color:rgba(51, 78, 160, 0.521);
+  padding: 20px 20px;
+  box-shadow: 0 20px 65px #1c4355;
+  position: relative;
+  border-radius: 8px;
+  text-align: center;
+  margin: 20px   auto;
+}
+.container:after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 120%;
+  background-color: #ffffff00;
+  z-index: -1;
+  top: -10%;
+  left: 10%;
+}
+/* .container p {
+  color: #ffff;
+  line-height: 2;
+  font-size: 18px;
+  text-shadow: #60abce;
+} */
+
+.container button {
+  background-color: rgb(159, 221, 70);
+  border: none;
+  padding: 15px 45px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #212631;
+  cursor: pointer;
+}
+h1{
+     color: azure;
+     text-decoration: underline ;
+}
+
+body input{
+  padding: 15px 45px;
+  border-radius: 5px;
+}
+

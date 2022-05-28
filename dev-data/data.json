@@ -1,4 +1,8 @@
 [
+    {"category": "Start!",
+    "questionID": 0,
+    "question": "Are you ready??",
+    "answer": "Let's go!"},
     {
         "category": "Node",
         "questionID": 1,
