@@ -1,5 +1,6 @@
 //Note about data.json file question Object/////////
 //Node questions are numbered 1-27 and take up indexes 0-26 in the array
+//HTML questions are numbered 1-10 and take up indexes 27-36 in the array
 
 // document.querySelector('#clickMe').addEventListener('click', makeReq)
 document.querySelector('#clickMe').addEventListener('click', devData)
