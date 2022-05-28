@@ -160,5 +160,65 @@
         "questionID": 27,
         "question": "What is EventEmitter in Node.js",
         "answer": "EventEmitter is a class that holds all the objects that can emit events. Whenever an object from the EventEmitter class throws an event, all attached functions are called upon synchronously"
+    },
+    {
+        "category": "HTML",
+        "questionID": 1,
+        "question": "What does doctype do?",
+        "answer": "DOCTYPE is an abbreviation for Document Type. defines how documents of a certain type should be structured (i.e. a button can contain a span but not a div), whereas a DOCTYPE declares what DTD a document supposedly respects (i.e. this document respects the HTML DTD).For webpages, the DOCTYPE declaration is required. It is used to tell user agents what version of the HTML specifications your document respects. Once a user agent has recognized a correct DOCTYPE, it will trigger the no-quirks mode matching this DOCTYPE for reading the document. If a user agent doesn't recognize a correct DOCTYPE, it will trigger the quirks mode.The DOCTYPE declaration for the HTML5 standards is <!DOCTYPE html>."
+    },
+    {
+        "category": "HTML",
+        "questionID": 2,
+        "question": "How do you serve a page with content in multiple languages?",
+        "answer": "When an HTTP request is made to a server, the requesting user agent usually sends information about language preferences, such as in the Accept-Language header. The server can then use this information to return a version of the document in the appropriate language if such an alternative is available. The returned HTML document should also declare the lang attribute in the <html> tag, such as <html lang={en}> </html>."
+    },
+    {
+        "category": "HTML",
+        "questionID": 3,
+        "question": "What kind of things must you be wary of when design or developing for multilingual sites",
+        "answer": "Use 'lang' attribute in your HTML, direct users to their native langue and allow them to change country/langue easily. Text in raster-based images(png, gif,jpg, etc) is not a scalable approach. Restrictive words/sentence length, some content can be longer when written in other languages. Be mindful of how colors are perceived across languages and cultures. Don't concatenate translated strings, it can break in other languages. Instead use temperate literals. Be mindful of language reading direction."
+    },
+    {
+        "category": "HTML",
+        "questionID": 4,
+        "question": "What kind of things must you be wary of when design or developing for multilingual sites?",
+        "answer": "Although the use of data attributes isnt encouranged today, one perfectly valid use of data attributes, is to add a hook for end to end testing frameworks such as Selenium and Capybara without having to create a meaningless classes or ID attributes. The element needs a way to be found by a particular Selenium spec and something like data-selector='the-thing' is a valid way to do so without convoluting the semantic markup otherwise."
+    },
+    {
+        "category": "HTML",
+        "questionID": 5,
+        "question": "Consider HTML5 as an open web platform. What are the building blocks of HTML5?",
+        "answer": "Semantics - Allowing you to describe more precisely what your content is. Connectivity - Allowing you to communicate with the server in new and innovative ways. Offline and storage - Allowing webpages to store data on the client-side locally and operate offline more efficiently.Multimedia - Making video and audio first-class citizens in the Open Web. 2D/3D graphics and effects - Allowing a much more diverse range of presentation options. Performance and integration - Providing greater speed optimization and better usage of computer hardware. Device access - Allowing for the usage of various input and output devices."
+    },
+    {
+        "category": "HTML",
+        "questionID": 6,
+        "question": "Describe the difference between a cookie, sessionStorage and localStorage.",
+        "answer": "All the above-mentioned technologies are key-value storage mechanisms on the client side. They are only able to store values as strings. Cookies expire when it's manually set to do so. localstorage can last forever. sessisonStorage expires on tab close. Cookies are automatically sent to the server while local and sessionStorage are never sent to the server.Both local and sessionStorage are 5MB while cookies are only 4kb."
+    },
+    {
+        "category": "HTML",
+        "questionID": 7,
+        "question": "Describe the difference between <script>, <script async> and <script defer>.",
+        "answer": "<script> HTML parsing is blocked and only resumes after script is executed. <script async> is fectched in parallel to HTML parsing and executed as soon as it is available(potentially before HTML parsing is complete). <script defer> script is fetched in parallel to HTML and executed when the page has finished parsing."
+    },
+    {
+        "category": "HTML",
+        "questionID": 8,
+        "question": "Why is it generally a good idea to position CSS <link>s between <head></head> and JS <script>s just before </body>? Do you know any exceptions?",
+        "answer": "CSS <link>s are placed in the top for optimization to get data to the user faster. <script> tags block HTML parsing while they are being downloaded and executed which can slow down your page. Placing the scripts at the bottom will allow the HTML to be parsed and displayed to the user first. An exception for positioning of <script>s at the bottom is when your script contains document.write(), but these days it's not a good practice to use document.write()."
+    },
+    {
+        "category": "HTML",
+        "questionID": 9,
+        "question": "What is progressive rendering?",
+        "answer": "Progressive rendering is the name given to techniques used to improve the performance of a webpage (in particular, improve perceived load time) to render content for display as quickly as possible. Examples of such techniques are lazy loading of images, prioritizing visible content, and async html fragments."
+    },
+    {
+        "category": "HTML",
+        "questionID": 10,
+        "question": "Why you would use a srcset attribute in an image tag? Explain the process the browser uses when evaluating the content of this attribute.",
+        "answer": "You would use the srcset attribute when you want to serve different images to users depending on their device display width - serve higher quality images to devices with retina display enhances the user experience while serving lower resolution images to low-end devices increase performance and decrease data wastage (because serving a larger image will not have any visible difference)."
     }
 ]
