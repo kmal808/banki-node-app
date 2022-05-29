@@ -280,6 +280,55 @@
         "questionID": 11,
         "question": "What's the difference between host objects and native objects?",
         "answer": "Native objects are objects that are part of the JavaScript language defined by the ECMAScript specification, like String, Math, RegExp, Object, Function, etc.Host objects are provided by the runtime environment (browser or Node), such as window, XMLHTTPRequest, etc." 
+    },
+    {
+        "category": "JavaScript",
+        "questionID": 13,
+        "question": "What's the difference between .call and .apply?",
+        "answer": "Both .call and .apply are used to invoke functions and the first parameter will be used as the value of this within the function. However, .call takes in comma-separated arguments as the next arguments while .apply takes in an array of arguments as the next argument." 
+    },
+    {
+        "category": "JavaScript",
+        "questionID": 14,
+        "question": "Explain Function.prototype.bind.",
+        "answer": "The bind() method creates a new function that, when called, has its this keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called. It's most useful for binding the value of this in methods of classes that you want to pass into other functions. This is frequently done in React components." 
+    },
+    {
+        "category": "JavaScript",
+        "questionID": 15,
+        "question": "When would you use document.write()?",
+        "answer": "document.write() writes a string of text to a document stream opened by document.open(). When document.write() is executed after the page has loaded, it will call document.open which clears the whole document (<head> and <body> removed!) and replaces the contents with the given parameter value. Probably as a means to completely overwrite dead or disused code." 
+    },
+    {
+        "category": "JavaScript",
+        "questionID": 16,
+        "question": "What's the difference between feature detection, feature inference, and using the UA string?",
+        "answer": "Feature detection involves working out whether a browser supports a certain block of code, and running different code depending on whether it does (or doesn't), so that the browser can always provide a working experience rather crashing/erroring in some browsers.Feature inference checks for a feature just like feature detection, but uses another function because it assumes it will also exist, but is not really recommended. Feature detection is more foolproof. UA String is a browser-reported string that allows the network protocol peers to identify the application type, operating system, software vendor or software version of the requesting software user agent." 
+    },
+    {
+        "category": "JavaScript",
+        "questionID": 17,
+        "question": "Explain Ajax in as much detail as possible.",
+        "answer": "Ajax (asynchronous JavaScript and XML) is a set of web development techniques using many web technologies on the client side to create asynchronous web applications. With Ajax, web applications can send data to and retrieve from a server asynchronously (in the background) without interfering with the display and behavior of the existing page. By decoupling the data interchange layer from the presentation layer, Ajax allows for web pages, and by extension web applications, to change content dynamically without the need to reload the entire page. In practice, modern implementations commonly use JSON instead of XML, due to the advantages of JSON being native to JavaScript." 
+    },
+    {
+        "category": "JavaScript",
+        "questionID": 18,
+        "question": "What are the advantages and disadvantages of using Ajax?",
+        "answer": "Better interactivity, New content from the server can be changed dynamically without the need to reload the entire page, Reduced connections to the server since scripts and stylesheets only have to be requested once, and State can be maintained on a page. JavaScript variables and DOM state will persist because the main container page was not reloaded. Basically most of the advantages of an SPA. For disadvantages, Dynamic webpages are harder to bookmark, it does not work if JavaScript has been disabled in the browser, Some webcrawlers do not execute JavaScript and would not see content that has been loaded by JavaScript, Webpages using Ajax to fetch data will likely have to combine the fetched remote data with client-side templates to update the DOM. For this to happen, JavaScript will have to be parsed and executed on the browser, and low-end mobile devices might struggle with this. Basically most of the disadvantages of an SPA. " 
+    },
+    {
+        "category": "JavaScript",
+        "questionID": 19,
+        "question": "Explain how JSONP works (and how it's not really Ajax).",
+        "answer": "JSONP (JSON with Padding) is a method commonly used to bypass the cross-domain policies in web browsers because Ajax requests from the current page to a cross-origin domain is not allowed. JSONP works by making a request to a cross-origin domain via a <script> tag and usually with a callback query parameter." 
+    },
+    {
+        "category": "JavaScript",
+        "questionID": 22,
+        "question": "Describe event bubbling.",
+        "answer": "When an event triggers on a DOM element, it will attempt to handle the event if there is a listener attached, then the event is bubbled up to its parent and the same thing happens. This bubbling occurs up the element's ancestors all the way to the document. Event bubbling is the mechanism behind event delegation." 
     }
+    
     
 ]
