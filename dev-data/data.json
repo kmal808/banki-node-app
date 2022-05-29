@@ -15,12 +15,12 @@
         "category": "Node",
         "questionID": 3,
         "question": "What are the features of Node.js?",
-        "answer": "Some features of Node.js include: Asynchronous and Event Driven, Very Fast, Single Threaded but Highly Scalable, and no buffering"
+        "answer": "Some features of Node.js include: Asynchronous and Event Driven, Very Fast, Single Threaded but Highly Scalable, and no buffering."
     },
     {
         "category": "Node",
         "questionID": 4,
-        "question": "How do you update NPM to a new version in Node.js",
+        "question": "How do you update NPM to a new version in Node.js?",
         "answer": ""
     },
     {
@@ -62,32 +62,32 @@
     {
         "category": "Node",
         "questionID": 11,
-        "question": "What are the functionalities of NPM in Node.js.",
+        "question": "What are the functionalities of NPM in Node.js?",
         "answer": "Online repositories for node.js pacages/modules which are searchable on search.nodejs.org. Also command line utility to install Node.js packages, do version management and dependecy management of Node.js packages."
     },
     {
         "category": "Node",
         "questionID": 12,
-        "question": "What is the difference between Node.js and Ajax",
+        "question": "What is the difference between Node.js and Ajax?",
         "answer": ""
     },
     {
         "category": "Node",
         "questionID": 13,
-        "question": "What are “streams” in Node.js? Explain the different types of streams present in Node.js.",
+        "question": "What are “streams” in Node.js? Explain the different types of streams present in Node.js?",
         "answer": ""
     },
     {
         "category": "Node",
         "questionID": 14,
-        "question": "Explain chaining in Node.js",
+        "question": "Explain chaining in Node.js.",
         "answer": ""
     },
     {
         "category": "Node",
         "questionID": 15,
-        "question": "What are Globals in Node.js",
-        "answer": "Node.js global objects are global in nature and they are available in all modules. We do not need to include these objects in our application, rather we can use them directly. These objects are modules, functions, strings. and object itself. Some examples are: __filename, __dirname, setTimeout(cb,ms), clearTimeout(t)"
+        "question": "What are Globals in Node.js?",
+        "answer": "Node.js global objects are global in nature and they are available in all modules. We do not need to include these objects in our application, rather we can use them directly. These objects are modules, functions, strings. and object itself. Some examples are: __filename, __dirname, setTimeout(cb,ms), and clearTimeout(t)."
     },
     {
         "category": "Node",
@@ -104,7 +104,7 @@
     {
         "category": "Node",
         "questionID": 18,
-        "question": "What is the purpose of the module .Exports",
+        "question": "What is the purpose of the module .Exports?",
         "answer": "In Node.js, a module encapsulates all related codes into a single unit of code that can be parsed by moving all relevant functions into a single file. You may export a module with the module and export the function, which lets it be imported into another file with a needed keyword."
     },
     {
@@ -122,7 +122,7 @@
     {
         "category": "Node",
         "questionID": 21,
-        "question": "How will you debug an application in Node.js",
+        "question": "How will you debug an application in Node.js?",
         "answer": "Node.js includes a debugging utility called debugger. To enable it start the Node.js with the debug argument followed by the path to the script to debug. nserting the statement debugger; into the source code of a script will enable a breakpoint at that position in the code."
     },
     {
@@ -134,7 +134,7 @@
     {
         "category": "Node",
         "questionID": 23,
-        "question": "What is process .nextTick()",
+        "question": "What is process .nextTick()?",
         "answer": "setImmediate() and setTimeout() are based on the event loop. But process.nextTick() is technically not part of the event loop. Instead, the nextTickQueue will be processed after the current operation completes, regardless of the current phase of the event loop. Thus, any time you call process.nextTick() in a given phase, all callbacks passed to process.nextTick() will be resolved before the event loop continues."
     },
     {
@@ -146,7 +146,7 @@
     {
         "category": "Node",
         "questionID": 25,
-        "question": "How will you debug an application in Node.js",
+        "question": "What is libuv?",
         "answer": "libuv is a multi-platform support library with a focus on asynchronous I/O. It was primarily developed for use by Node.js, but it's also used by Luvit, Julia, pyuv, and others. When the node.js project began in 2009 as a JavaScript environment decoupled from the browser, it is using Google's V8 and Marc Lehmann's libev, node.js combined a model of I/O - evented - with a language that was well suited to the style of programming; due to the way it had been shaped by browsers. As node.js grew in popularity, it was important to make it work on Windows, but libev ran only on Unix. libuv was an abstraction around libev or IOCP depending on the platform, providing users an API based on libev. In the node-v0.9.0 version of libuv libev was removed."
     },
     {
@@ -158,8 +158,8 @@
     {
         "category": "Node",
         "questionID": 27,
-        "question": "What is EventEmitter in Node.js",
-        "answer": "EventEmitter is a class that holds all the objects that can emit events. Whenever an object from the EventEmitter class throws an event, all attached functions are called upon synchronously"
+        "question": "What is EventEmitter in Node.js?",
+        "answer": "EventEmitter is a class that holds all the objects that can emit events. Whenever an object from the EventEmitter class throws an event, all attached functions are called upon synchronously."
     },
     {
         "category": "HTML",
@@ -176,7 +176,7 @@
     {
         "category": "HTML",
         "questionID": 30,
-        "question": "What kind of things must you be wary of when design or developing for multilingual sites",
+        "question": "What kind of things must you be wary of when design or developing for multilingual sites?",
         "answer": "Use 'lang' attribute in your HTML, direct users to their native langue and allow them to change country/langue easily. Text in raster-based images(png, gif,jpg, etc) is not a scalable approach. Restrictive words/sentence length, some content can be longer when written in other languages. Be mindful of how colors are perceived across languages and cultures. Don't concatenate translated strings, it can break in other languages. Instead use temperate literals. Be mindful of language reading direction."
     },
     {

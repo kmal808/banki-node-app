@@ -1,6 +1,7 @@
 
 span{
   display: block;
+  font-size: 20px;
 }
 
 h2 {
@@ -16,14 +17,18 @@ body {
 }
 
 .answer {
-  width: 800px;
+  width: 1200px;
   margin: 0 auto;
 }
 
 body {
-  color: rgba(254,213,33,255);
+  /* color: rgba(254,213,33,255); */
   background-color: rgba(74,144,203,255);
   font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  h1, span, footer {
+    color: rgba(254,213,33,255);
   }
 
 a {
