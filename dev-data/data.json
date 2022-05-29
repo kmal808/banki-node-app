@@ -235,43 +235,43 @@
     },
     {
         "category": "JavaScript",
-        "questionID": 40,
+        "questionID": 40   
         "question": "Explain how prototypal inheritance works",
         "answer": " All JavaScript objects have a ‘proto’ property (with the exception of objects created with __Object.create(null)__) , that is a reference to another object, which is called the object's 'prototype'. When a property is accessed on an object and if the property is not found on that object, the JavaScript engine looks at the object's __proto__, and the __proto__'s __proto__ and so on, until it finds the property defined on one of the __proto__s or until it reaches the end of the prototype chain."
     },
     {
-        "category": "JavaScript",
-        "questionID": 41,
+        "category": "JavaScript",g
+        "questionID": 41         
         "question": "What do you think of AMD vs CommonJS?",
         "answer": "Both are ways to implement a module system, which was not natively present in JavaScript until ES2015 came along. CommonJS is synchronous while AMD (Asynchronous Module Definition) is obviously asynchronous. CommonJS is designed with server-side development in mind while AMD, with its support for asynchronous loading of modules, is more intended for browsers."
     },
     {
         "category": "JavaScript",
-        "questionID": 42,
+        "questionID": 42
         "question": "Explain why the following doesn't work as an IIFE: function foo(){ }();. What needs to be changed to properly make it an IIFE?",
         "answer": "IIFE stands for Immediately Invoked Function Expressions. The JavaScript parser reads function foo(){ }(); as function foo(){ } and ();, where the former is a function declaration and the latter (a pair of parentheses) is an attempt at calling a function but there is no name specified, hence it throws Uncaught SyntaxError: Unexpected token ). It can be fixed by adding more parentheses: (function foo(){ })() and (function foo(){ }()). Statements that begin with function are considered to be function declarations; by wrapping this function within (), it becomes a function expression which can then be executed with the subsequent (). These functions are no longer exposed in the global scope."
     },
     {
         "category": "JavaScript",
-        "questionID": 43,
+        "questionID": 43
         "question": "What's the difference between a variable that is: null, undefined or undeclared? How would you go about checking for any of these states?",
         "answer": "Undeclared variables are created when you assign a value to an identifier that is not previously created using var, let or const. To check for them, wrap its usage in a try/catch block. A variable that is undefined is a variable that has been declared, but not assigned a value. To check for it, compare using the strict equality (===) operator or typeof which will give the 'undefined' string. A variable that is null will have been explicitly assigned to the null value. It represents no value and is different from undefined in the sense that it has been explicitly assigned. To check for null, simply compare using the strict equality operator."
     },
     {
         "category": "JavaScript",
-        "questionID": 44,
+        "questionID": 44
         "question": "What is a closure, and how/why would you use one?",
         "answer": "A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function’s scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time. Among other things, closures are commonly used to give objects data privacy."
     },
     {
         "category": "JavaScript",
-        "questionID": 45,
+        "questionID": 45
         "question": "Can you describe the main difference between a .forEach loop and a .map() loop and why you would pick one versus the other?",
         "answer": "A forEach Iterates through the elements in an array and executes a callback for each element. A map iterates through the elements in an array and 'maps' each element to a new element by calling the function on each element, creating a new array as a result . The main difference between .forEach and .map() is that .map() returns a new array. If you need the result, but do not wish to mutate the original array, .map() is the clear choice. If you simply need to iterate over an array, forEach is a better choice" 
     },
     {
         "category": "JavaScript",
-        "questionID": 46,
+        "questionID": 46
         "question": "What's a typical use case for anonymous functions?",
         "answer": "They can be used as a callback that is used once and does not need to be used anywhere else. The code will seem more self-contained and readable when handlers are defined right inside the code calling them, rather than having to search elsewhere to find the function body." 
     },
@@ -329,5 +329,4 @@
         "question": "Describe event bubbling.",
         "answer": "When an event triggers on a DOM element, it will attempt to handle the event if there is a listener attached, then the event is bubbled up to its parent and the same thing happens. This bubbling occurs up the element's ancestors all the way to the document. Event bubbling is the mechanism behind event delegation." 
     }
-       
 ]
