@@ -220,5 +220,11 @@
         "questionID": 10,
         "question": "Why you would use a srcset attribute in an image tag? Explain the process the browser uses when evaluating the content of this attribute.",
         "answer": "You would use the srcset attribute when you want to serve different images to users depending on their device display width - serve higher quality images to devices with retina display enhances the user experience while serving lower resolution images to low-end devices increase performance and decrease data wastage (because serving a larger image will not have any visible difference)."
+    },
+    {
+        "category": "JavaScript",
+        "questionID": 1,
+        "question": "Explain Event Delegation",
+        "answer": "The idea is that if we have a lot of elements handled in a similar way, then instead of assigning a handler to each of them – we put a single handler on their common ancestor. In the handler we get event.target to see where the event actually happened and handle it."
     }
 ]
