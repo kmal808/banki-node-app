@@ -15,12 +15,12 @@
         "category": "Node",
         "questionID": 3,
         "question": "What are the features of Node.js?",
-        "answer": "Some features of Node.js include: Asynchronous and Event Driven, Very Fast, Single Threaded but Highly Scalable, and no buffering"
+        "answer": "Some features of Node.js include: Asynchronous and Event Driven, Very Fast, Single Threaded but Highly Scalable, and no buffering."
     },
     {
         "category": "Node",
         "questionID": 4,
-        "question": "How do you update NPM to a new version in Node.js",
+        "question": "How do you update NPM to a new version in Node.js?",
         "answer": ""
     },
     {
@@ -62,32 +62,32 @@
     {
         "category": "Node",
         "questionID": 11,
-        "question": "What are the functionalities of NPM in Node.js.",
+        "question": "What are the functionalities of NPM in Node.js?",
         "answer": "Online repositories for node.js pacages/modules which are searchable on search.nodejs.org. Also command line utility to install Node.js packages, do version management and dependecy management of Node.js packages."
     },
     {
         "category": "Node",
         "questionID": 12,
-        "question": "What is the difference between Node.js and Ajax",
+        "question": "What is the difference between Node.js and Ajax?",
         "answer": ""
     },
     {
         "category": "Node",
         "questionID": 13,
-        "question": "What are “streams” in Node.js? Explain the different types of streams present in Node.js.",
+        "question": "What are “streams” in Node.js? Explain the different types of streams present in Node.js?",
         "answer": ""
     },
     {
         "category": "Node",
         "questionID": 14,
-        "question": "Explain chaining in Node.js",
+        "question": "Explain chaining in Node.js.",
         "answer": ""
     },
     {
         "category": "Node",
         "questionID": 15,
-        "question": "What are Globals in Node.js",
-        "answer": "Node.js global objects are global in nature and they are available in all modules. We do not need to include these objects in our application, rather we can use them directly. These objects are modules, functions, strings. and object itself. Some examples are: __filename, __dirname, setTimeout(cb,ms), clearTimeout(t)"
+        "question": "What are Globals in Node.js?",
+        "answer": "Node.js global objects are global in nature and they are available in all modules. We do not need to include these objects in our application, rather we can use them directly. These objects are modules, functions, strings. and object itself. Some examples are: __filename, __dirname, setTimeout(cb,ms), and clearTimeout(t)."
     },
     {
         "category": "Node",
@@ -104,7 +104,7 @@
     {
         "category": "Node",
         "questionID": 18,
-        "question": "What is the purpose of the module .Exports",
+        "question": "What is the purpose of the module .Exports?",
         "answer": "In Node.js, a module encapsulates all related codes into a single unit of code that can be parsed by moving all relevant functions into a single file. You may export a module with the module and export the function, which lets it be imported into another file with a needed keyword."
     },
     {
@@ -122,7 +122,7 @@
     {
         "category": "Node",
         "questionID": 21,
-        "question": "How will you debug an application in Node.js",
+        "question": "How will you debug an application in Node.js?",
         "answer": "Node.js includes a debugging utility called debugger. To enable it start the Node.js with the debug argument followed by the path to the script to debug. nserting the statement debugger; into the source code of a script will enable a breakpoint at that position in the code."
     },
     {
@@ -134,7 +134,7 @@
     {
         "category": "Node",
         "questionID": 23,
-        "question": "What is process .nextTick()",
+        "question": "What is process .nextTick()?",
         "answer": "setImmediate() and setTimeout() are based on the event loop. But process.nextTick() is technically not part of the event loop. Instead, the nextTickQueue will be processed after the current operation completes, regardless of the current phase of the event loop. Thus, any time you call process.nextTick() in a given phase, all callbacks passed to process.nextTick() will be resolved before the event loop continues."
     },
     {
@@ -146,7 +146,7 @@
     {
         "category": "Node",
         "questionID": 25,
-        "question": "How will you debug an application in Node.js",
+        "question": "What is libuv?",
         "answer": "libuv is a multi-platform support library with a focus on asynchronous I/O. It was primarily developed for use by Node.js, but it's also used by Luvit, Julia, pyuv, and others. When the node.js project began in 2009 as a JavaScript environment decoupled from the browser, it is using Google's V8 and Marc Lehmann's libev, node.js combined a model of I/O - evented - with a language that was well suited to the style of programming; due to the way it had been shaped by browsers. As node.js grew in popularity, it was important to make it work on Windows, but libev ran only on Unix. libuv was an abstraction around libev or IOCP depending on the platform, providing users an API based on libev. In the node-v0.9.0 version of libuv libev was removed."
     },
     {
@@ -158,72 +158,72 @@
     {
         "category": "Node",
         "questionID": 27,
-        "question": "What is EventEmitter in Node.js",
-        "answer": "EventEmitter is a class that holds all the objects that can emit events. Whenever an object from the EventEmitter class throws an event, all attached functions are called upon synchronously"
+        "question": "What is EventEmitter in Node.js?",
+        "answer": "EventEmitter is a class that holds all the objects that can emit events. Whenever an object from the EventEmitter class throws an event, all attached functions are called upon synchronously."
     },
     {
         "category": "HTML",
-        "questionID": 1,
+        "questionID": 28,
         "question": "What does doctype do?",
         "answer": "DOCTYPE is an abbreviation for Document Type. defines how documents of a certain type should be structured (i.e. a button can contain a span but not a div), whereas a DOCTYPE declares what DTD a document supposedly respects (i.e. this document respects the HTML DTD).For webpages, the DOCTYPE declaration is required. It is used to tell user agents what version of the HTML specifications your document respects. Once a user agent has recognized a correct DOCTYPE, it will trigger the no-quirks mode matching this DOCTYPE for reading the document. If a user agent doesn't recognize a correct DOCTYPE, it will trigger the quirks mode.The DOCTYPE declaration for the HTML5 standards is <!DOCTYPE html>."
     },
     {
         "category": "HTML",
-        "questionID": 2,
+        "questionID": 29,
         "question": "How do you serve a page with content in multiple languages?",
         "answer": "When an HTTP request is made to a server, the requesting user agent usually sends information about language preferences, such as in the Accept-Language header. The server can then use this information to return a version of the document in the appropriate language if such an alternative is available. The returned HTML document should also declare the lang attribute in the <html> tag, such as <html lang={en}> </html>."
     },
     {
         "category": "HTML",
-        "questionID": 3,
-        "question": "What kind of things must you be wary of when design or developing for multilingual sites",
+        "questionID": 30,
+        "question": "What kind of things must you be wary of when design or developing for multilingual sites?",
         "answer": "Use 'lang' attribute in your HTML, direct users to their native langue and allow them to change country/langue easily. Text in raster-based images(png, gif,jpg, etc) is not a scalable approach. Restrictive words/sentence length, some content can be longer when written in other languages. Be mindful of how colors are perceived across languages and cultures. Don't concatenate translated strings, it can break in other languages. Instead use temperate literals. Be mindful of language reading direction."
     },
     {
         "category": "HTML",
-        "questionID": 4,
+        "questionID": 31,
         "question": "What kind of things must you be wary of when design or developing for multilingual sites?",
         "answer": "Although the use of data attributes isnt encouranged today, one perfectly valid use of data attributes, is to add a hook for end to end testing frameworks such as Selenium and Capybara without having to create a meaningless classes or ID attributes. The element needs a way to be found by a particular Selenium spec and something like data-selector='the-thing' is a valid way to do so without convoluting the semantic markup otherwise."
     },
     {
         "category": "HTML",
-        "questionID": 5,
+        "questionID": 32,
         "question": "Consider HTML5 as an open web platform. What are the building blocks of HTML5?",
         "answer": "Semantics - Allowing you to describe more precisely what your content is. Connectivity - Allowing you to communicate with the server in new and innovative ways. Offline and storage - Allowing webpages to store data on the client-side locally and operate offline more efficiently.Multimedia - Making video and audio first-class citizens in the Open Web. 2D/3D graphics and effects - Allowing a much more diverse range of presentation options. Performance and integration - Providing greater speed optimization and better usage of computer hardware. Device access - Allowing for the usage of various input and output devices."
     },
     {
         "category": "HTML",
-        "questionID": 6,
+        "questionID": 33,
         "question": "Describe the difference between a cookie, sessionStorage and localStorage.",
         "answer": "All the above-mentioned technologies are key-value storage mechanisms on the client side. They are only able to store values as strings. Cookies expire when it's manually set to do so. localstorage can last forever. sessisonStorage expires on tab close. Cookies are automatically sent to the server while local and sessionStorage are never sent to the server.Both local and sessionStorage are 5MB while cookies are only 4kb."
     },
     {
         "category": "HTML",
-        "questionID": 7,
+        "questionID": 34,
         "question": "Describe the difference between <script>, <script async> and <script defer>.",
         "answer": "<script> HTML parsing is blocked and only resumes after script is executed. <script async> is fectched in parallel to HTML parsing and executed as soon as it is available(potentially before HTML parsing is complete). <script defer> script is fetched in parallel to HTML and executed when the page has finished parsing."
     },
     {
         "category": "HTML",
-        "questionID": 8,
+        "questionID": 35,
         "question": "Why is it generally a good idea to position CSS <link>s between <head></head> and JS <script>s just before </body>? Do you know any exceptions?",
         "answer": "CSS <link>s are placed in the top for optimization to get data to the user faster. <script> tags block HTML parsing while they are being downloaded and executed which can slow down your page. Placing the scripts at the bottom will allow the HTML to be parsed and displayed to the user first. An exception for positioning of <script>s at the bottom is when your script contains document.write(), but these days it's not a good practice to use document.write()."
     },
     {
         "category": "HTML",
-        "questionID": 9,
+        "questionID": 36,
         "question": "What is progressive rendering?",
         "answer": "Progressive rendering is the name given to techniques used to improve the performance of a webpage (in particular, improve perceived load time) to render content for display as quickly as possible. Examples of such techniques are lazy loading of images, prioritizing visible content, and async html fragments."
     },
     {
         "category": "HTML",
-        "questionID": 10,
+        "questionID": 37,
         "question": "Why you would use a srcset attribute in an image tag? Explain the process the browser uses when evaluating the content of this attribute.",
         "answer": "You would use the srcset attribute when you want to serve different images to users depending on their device display width - serve higher quality images to devices with retina display enhances the user experience while serving lower resolution images to low-end devices increase performance and decrease data wastage (because serving a larger image will not have any visible difference)."
     },
     {
         "category": "JavaScript",
-        "questionID": 1,
+        "questionID": 38,
         "question": "Explain Event Delegation",
         "answer": "The idea is that if we have a lot of elements handled in a similar way, then instead of assigning a handler to each of them – we put a single handler on their common ancestor. In the handler we get event.target to see where the event actually happened and handle it."
     }
