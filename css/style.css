@@ -27,7 +27,7 @@ body {
   font-family: Georgia, 'Times New Roman', Times, serif;
   }
 
-  h1, span, footer {
+  h1, span, footer, h2 {
     color: rgba(254,213,33,255);
   }
 
@@ -49,3 +49,7 @@ a {
 .devs {
   margin: 20px 0 10px 0;
 }
+
+/* .categoryHeadings {
+  border-bottom: 1px solid rgba(254,213,33,255);
+} */
