@@ -9,7 +9,6 @@
   "scripts": {
     "start": "node server.js"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kmal808/banki-node-app.git"
