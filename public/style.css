@@ -1,55 +1,62 @@
+span {
+  display: block;
+  font-size: 20px;
+}
 
-span{
-     display: block;
-     font-size: 20px;
-   }
-   
-   h2 {
-     margin-top: 2.5px;
-   }
-   
-   .containerInfo{
-     margin-top: 10px;
-   }
-   
-   body {
-     text-align: center;
-   }
-   
-   .answer {
-     width: 1200px;
-     margin: 0 auto;
-   }
-   
-   body {
-     /* color: rgba(254,213,33,255); */
-     background-color: rgba(74,144,203,255);
-     font-family: Georgia, 'Times New Roman', Times, serif;
-     }
-   
-     h1, span, footer, h2 {
-       color: rgba(254,213,33,255);
-     }
-   
-   a {
-     color: rgba(254,213,33,255);
-   }
-   
-   .linkContainer {
-     display: flex;
-     gap: 10px;
-     justify-content: center;
-     align-items: center;
-   }
-   
-   .instructions {
-     margin: 10px 0;
-   }
-   
-   .devs {
-     margin: 20px 0 10px 0;
-   }
+h2 {
+  margin-top: 2.5px;
+}
 
-   /* .categoryHeadings {
+.containerInfo {
+  margin-top: 10px;
+}
+
+body {
+  text-align: center;
+}
+
+.answer {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  /* color: rgba(254,213,33,255); */
+  background-color: rgba(74, 144, 203, 255);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1,
+span,
+footer,
+h2 {
+  color: rgba(254, 213, 33, 255);
+}
+
+a {
+  color: rgba(254, 213, 33, 255);
+}
+
+.linkContainer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.instructions {
+  margin: 10px 0;
+}
+
+.devs {
+  margin: 0 0 10px 0;
+}
+
+.api {
+  margin: 20px 0 0px 0;
+  font-size: 0.8em;
+}
+
+/* .categoryHeadings {
      border-bottom: 1px solid rgba(254,213,33,255);
    } */

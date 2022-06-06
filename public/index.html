@@ -1,45 +1,123 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Banki Question App</title>
-  
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="style.css">
 
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>Welcome to the Banki Question App!</h1>
-    <span class="instructions">Enter A Number Below To Pull Up A Specific Question</span>
-    <input id="userName" type="text" name="" placeholder="Enter number to get that question">
-    <button id="clickMe" class="btn btn-primary" type="button" name="button">Click Me</button>
-    <span class="instructions">Click One Of The Buttons Below To Get A Random Question From That Category</span>
-    <button class="categories btn btn-primary" type="button" name="button" value="HTML">HTML</button>
-    <button class="categories btn btn-primary" type="button" name="button" value="CSS">CSS</button>
-    <button class="categories btn btn-primary" type="button" name="button" value="JavaScript">JavaScript</button>
-    <button class="categories btn btn-primary" type="button" name="button" value="Node">Node.js</button>
-    <button class="categories btn btn-primary" type="button" name="button" value="CS Theory">CS Theory</button>
-    <!-- The next lines are commented out because I was toying with the idea of letting user pick random category for the question -->
-    <!-- <input id="userQuestion" type="text" name="" placeholder="Enter Category">
-    <button id="clickThis" type="button" name="button">Click This</button> -->
+    <span class="instructions"
+      >Enter A Number Below To Pull Up A Specific Question</span
+    >
+    <input
+      id="userName"
+      type="text"
+      name=""
+      placeholder="Enter number to get that question"
+    />
+    <button id="clickMe" class="btn btn-primary" type="button" name="button">
+      Click Me
+    </button>
+    <span class="instructions"
+      >Click One Of The Buttons Below To Get A Random Question From That
+      Category</span
+    >
+    <button
+      class="categories btn btn-primary"
+      type="button"
+      name="button"
+      value="HTML"
+    >
+      HTML
+    </button>
+    <button
+      class="categories btn btn-primary"
+      type="button"
+      name="button"
+      value="CSS"
+    >
+      CSS
+    </button>
+    <button
+      class="categories btn btn-primary"
+      type="button"
+      name="button"
+      value="JavaScript"
+    >
+      JavaScript
+    </button>
+    <button
+      class="categories btn btn-primary"
+      type="button"
+      name="button"
+      value="Node"
+    >
+      Node.js
+    </button>
+    <button
+      class="categories btn btn-primary"
+      type="button"
+      name="button"
+      value="CS Theory"
+    >
+      CS Theory
+    </button>
 
-    <section class="containerInfo"><span class="categoryHeadings">Question Number</span> <h2 id="number"></h2></section>
-    <section class="containerInfo"><span class="categoryHeadings">Category</span> <h2 id="category"></h2></section>
-    <section class="containerInfo"><span class="categoryHeadings">Question</span> <h2 id="question"></h2></section>
-    <section class="answer containerInfo"><span class="categoryHeadings">Answer</span> <h2 id="answer"></h2></section>
+    <section class="containerInfo">
+      <span class="categoryHeadings">Question Number</span>
+      <h2 id="number"></h2>
+    </section>
+    <section class="containerInfo">
+      <span class="categoryHeadings">Category</span>
+      <h2 id="category"></h2>
+    </section>
+    <section class="containerInfo">
+      <span class="categoryHeadings">Question</span>
+      <h2 id="question"></h2>
+    </section>
+    <section class="answer containerInfo">
+      <span class="categoryHeadings">Answer</span>
+      <h2 id="answer"></h2>
+    </section>
 
     <footer>
       <footer>
+        <span class="api"
+          >To access banki quesiton api for your own project go to: /api</span
+        >
         <span class="devs">Brought to you by #100Dev's Table 7:</span>
-				<section class="linkContainer">
-					<a href="https://twitter.com/EzekelRAGE" target="_blank">@EzekelRAGE</a> <span>|</span>
-					<a href="https://twitter.com/DunnTheRightWay" target="_blank">@DunnTheRightWay</a> <span>|</span>
-					<a href="https://twitter.com/rob_c_perry" target="_blank">@rob_c_perry</a> <span>|</span>
-					<a href="https://twitter.com/kmal808" target="_blank">@kmal808</a> <span>|</span>
-					<a href="https://twitter.com/AG_Softwarez" target="_blank">@AG_Softwarez</a> <span>|</span>
-					<a href="https://twitter.com/CodusOperandi" target="_blank">@CodusOperandi</a>
-				</section>
-			</footer>
+        <section class="linkContainer">
+          <a href="https://twitter.com/EzekelRAGE" target="_blank"
+            >@EzekelRAGE</a
+          >
+          <span>|</span>
+          <a href="https://twitter.com/DunnTheRightWay" target="_blank"
+            >@DunnTheRightWay</a
+          >
+          <span>|</span>
+          <a href="https://twitter.com/rob_c_perry" target="_blank"
+            >@rob_c_perry</a
+          >
+          <span>|</span>
+          <a href="https://twitter.com/kmal808" target="_blank">@kmal808</a>
+          <span>|</span>
+          <a href="https://twitter.com/AG_Softwarez" target="_blank"
+            >@AG_Softwarez</a
+          >
+          <span>|</span>
+          <a href="https://twitter.com/CodusOperandi" target="_blank"
+            >@CodusOperandi</a
+          >
+        </section>
+      </footer>
     </footer>
     <script type="text/javascript" src="main.js"></script>
   </body>

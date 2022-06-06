@@ -7,7 +7,7 @@ const banki = require("./banki");
 app.use(express.static(path.join(__dirname, "public")));
 
 //This is just a link to access the banki api for the user
-app.get("/api/banki", (req, res) => {
+app.get("/api", (req, res) => {
   res.json(banki);
 });
 
